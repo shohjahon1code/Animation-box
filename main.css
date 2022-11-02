@@ -1,0 +1,77 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 100px;
+  background-color: rgb(75, 170, 75);
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+}
+
+.container__div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: crimson;
+  transition: all 0.7s linear;
+
+  animation-name: movement;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-duration: 12s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes movement {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  10% {
+    top: 0;
+    left: 200px;
+  }
+
+  20% {
+    top: 150px;
+    left: 400px;
+  }
+  30% {
+    top: 200px;
+    left: 700px;
+  }
+  40% {
+    top: 0;
+  }
+  50% {
+    top: 0;
+    left: 1000px;
+  }
+  60% {
+    top: 200px;
+    left: 1200px;
+  }
+  70% {
+    top: 500px;
+    left: 1200px;
+  }
+  80% {
+    top: 700px;
+    left: 800px;
+  }
+  90% {
+    top: 700px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
